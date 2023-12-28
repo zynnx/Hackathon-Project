@@ -1,0 +1,326 @@
+.main-gen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    flex-flow: column wrap;
+}
+
+#pregnancyResult,
+#pregnancyText {
+    position: relative;
+    color: aqua;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#pregnancybtn {
+    border-radius: 25px;
+    height: 50px;
+    display: inline-flex;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(88, 177, 225, 0.3));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    transition: background 0.3s, transform 0.3s;
+    animation: pumpAnimation 1s infinite alternate;
+}
+
+@keyframes pumpAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#pregnancybtn:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(88, 177, 225, 0.8));
+    transform: scale(1.1);
+    /* Escala aumentada ao passar o mouse */
+}
+
+#genderbtn {
+    border-radius: 25px;
+    height: 50px;
+    display: inline-flex;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(88, 177, 225, 0.3));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    transition: background 0.3s;
+    /* Adiciona uma transição suave de cor */
+}
+
+#genderbtn:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(88, 177, 225, 0.8));
+}
+
+#genderImg img,
+#pregnancyImg img {
+    position: relative;
+    width: 600px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 600px;
+    /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    /* Sombra branca para dar ilusão 3D */
+    transition: transform 0.5s;
+    /* Add a smooth transition effect */
+}
+
+#pregnancyImg img:hover,
+#genderImg img:hover {
+    transform: rotateY(15deg);
+    /* Adjust the rotation angle for the 3D effect */
+}
+
+#genderResult {
+    position: relative;
+    text-transform: uppercase;
+    padding: 10px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: blue;
+}
+
+.main-reveal {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.videoback1 {
+    position: absolute;
+}
+
+.video-back1 {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 2;
+    left: 0;
+}
+
+.welcome-box {
+    background: linear-gradient(to bottom, #9b97974f, #6d6a6a53);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    position: relative;
+    z-index: 1;
+    box-shadow: 1px 1px 25px 9px rgba(137, 131, 131, 0.292);
+}
+    /* Certifica-se de que a welcome-box está na frente do vídeo */
+
+.welcome-box h1 {
+    font-size: 24px;
+}
+
+.welcome-box h1 {
+    color: #333;
+    /* Cor do texto */
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(92, 164, 246);
+}
+
+.img-container1 {
+    position: relative;
+    opacity: 0.5;
+}
+
+.video2back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Colocar o vídeo atrás dos outros elementos */
+    opacity: 0.4;
+}
+
+.myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testeh1s {
+    font-size: 972px;
+    background: -webkit-linear-gradient(rgb(233, 159, 247), rgb(105, 169, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#genderResult {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, rgb(105, 169, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    /* Ensures inline-block for animation */
+    animation: pump 1s infinite alternate;
+}
+
+@keyframes pump {
+    0% {
+        transform: scale(1);
+        /* Initial scale */
+    }
+
+    100% {
+        transform: scale(1.1);
+        /* Scale up to 1.2 times */
+    }
+}
+
+#pregnancyResult {
+    font-size: 20px;
+    background: -webkit-linear-gradient(rgb(233, 157, 157), rgb(243, 2, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#pregnancyText {
+    font-size: 20px;
+    background: -webkit-linear-gradient(rgb(234, 145, 145), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+#typewriter {
+    overflow: hidden;
+    padding: 10px;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    animation: typing 6s steps(40) infinite, blink-caret 0.75s step-end 3s infinite;
+    /* Adiciona uma pausa de 3s no final da animação */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
+    /* Adiciona um estado intermediário para manter o texto visível */
+    50%,
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.pumpAnimation {
+    animation: pumpAnimation 1s infinite alternate;
+}
+
+@keyframes pumpAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.formmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.formmain,
+label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-text.text-muted {
+    color: white;
+  }
+
+  .formdiv {
+    background: linear-gradient(to bottom, #9b97974f, #6d6a6a53);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    position: relative;
+    z-index: 1;
+    width: 640px;
+    margin: 18px auto 20px
+}
+
+#emailForm{
+    color: white;
+    font-size: 15px;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+#btninvite, #btndone{
+    background-color: darkorchid;
+  border: 1px solid white;
+}
+
+#btninvite{
+    margin-right: 400px;
+}
+
+#custom-image-id {
+    /* Your CSS styles here */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* Other styles */
+  }

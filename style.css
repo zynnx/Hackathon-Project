@@ -1,0 +1,161 @@
+body {
+  background-color: black;
+}
+
+.anav{
+  height: 100px;
+  text-decoration: none;
+  color: azure;
+}
+
+.navbar1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnGenerator{
+  font-size:x-large;
+  text-decoration:underline;
+  text-transform: uppercase;
+  background: linear-gradient(to top, #ffffff9e, #f0ad1d); /* Gradiente de vermelho para branco */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu-bar {
+	border-radius: 25px;
+	height: 50px;
+	display: inline-flex;
+	background: linear-gradient(to bottom, #9b97974f, #6d6a6a53);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	align-items: center;
+  justify-content: center;
+	padding: 0 10px;
+
+  position: absolute;
+  top:30px;
+
+}
+
+.navli {
+	list-style: none;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 12px 16px;
+	margin: 0 8px;
+	position: relative;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.navli::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	transition: .2s;
+	border-radius: 25px;
+}
+
+.navli:hover::before {
+	background: linear-gradient(to bottom, #ff2a2a, #e86c78);
+	box-shadow: 0px 3px 20px 0px black;
+	transform: scale(1.2);
+}
+
+.videodiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.video-container {
+  box-shadow: 1px 1px 25px 9px rgba(137, 131, 131, 0.8);
+}
+
+.img-container{
+  position: absolute;
+  margin: auto;
+  margin-top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.videoback{
+  position: fixed;
+  margin-left: 159px; 
+}
+
+.video-back{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 2;
+  left: 0;
+}
+
+.quotes{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-align: center;
+  margin-top: 40%;
+  z-index: 0;
+}
+
+.quotesp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container{
+text-align: center;
+}
+
+.appgender {
+  position: relative;
+  font-size: 10px;
+  margin-top: 180px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.appgender h1 {
+  color: rgba(255, 255, 255, 0.8); /* Cor inicial do texto */
+  animation: textColorChange 5s infinite alternate; /* Adiciona a animação de cores em movimento para o texto */
+}
+
+@keyframes textColorChange {
+  0% {
+    color: rgba(121, 11, 126, 0.8); /* Vermelho */
+  }
+  25% {
+    color: rgba(118, 49, 151, 0.8); /* Verde */
+  }
+  50% {
+    color: rgb(105, 4, 98); /* Azul */
+  }
+  75% {
+    color: rgba(226, 105, 232, 0.8); /* Amarelo */
+  }
+  100% {
+    color: rgba(222, 123, 242, 0.8); /* Magenta */
+  }
+}

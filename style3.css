@@ -1,0 +1,42 @@
+.mainabout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.about-container {
+    background: linear-gradient(to bottom, #9b97974f, #6d6a6a53);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 15px;
+    font-family: 'Arial', sans-serif; /* Use a fonte desejada, aqui estou usando Arial como exemplo */
+    color: azure;
+    margin-top: 200px;
+    width: 1100px;
+    text-align:center;
+    font-size: 20px;
+}
+
+.about-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #9b97974f, #6d6a6a53);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    font-family: 'Arial', sans-serif; /* Use a fonte desejada, aqui estou usando Arial como exemplo */
+    color: azure;
+    padding: 10px;
+    width: 900px;
+    font-size: small;
+    text-transform: uppercase;
+    margin-top: 240px;
+}
+
+.video2back{
+    opacity: 0.3;
+}

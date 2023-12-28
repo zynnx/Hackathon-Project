@@ -1,0 +1,20 @@
+<div class="video2back">
+<video autoplay muted loop class="myVideo">
+    <source src="/resources/videos/rhinnabackvideo.mp4" type="video/mp4">
+  </video>
+</div>   
+<div class="welcome-box">
+    <h1 class="testeh1s">Gender Reveal Party</h1>
+
+<button id="pregnancybtn" class="btn1" type="button">Pregnancy test</button> 
+<p id="pregnancyResult"></p>
+<div id="pregnancyImg"></div>
+<div id="pregnancyText"></div>
+
+<div class="main-reveal">
+    <button id="genderbtn" type="button">Gender reveal</button>
+    <p id="genderResult"></p>
+    <div id="genderImg"></div>
+</div>
+
+</div>
